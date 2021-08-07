@@ -41,10 +41,10 @@ app.get('/help', (req, res) => {
 })
 
 app.get('/weather', (req, res) => {
-    res.send({location: 'Bordeaux', temperature: 25, humidity: '80%'})
+    res.send({ location: 'Bordeaux', temperature: 25, humidity: '80%' })
 })
 app.get('/json', (req, res) => {
-    res.json({name: 'Laurent', age: 29})
+    res.json({ name: 'Laurent', age: 29 })
 })
 
 app.get('/help/*', (req, res) => {
