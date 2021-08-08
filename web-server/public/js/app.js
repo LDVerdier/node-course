@@ -1,10 +1,3 @@
-// console.log('Hey !');
-
-
-// const url = 'http://puzzle.mead.io/puzzle'
-
-
-// .catch((error) => {console.log(error)})
 const messageOne = document.querySelector('#message-1')
 const messageTwo = document.querySelector('#message-2')
 
@@ -16,7 +9,7 @@ weatherForm.addEventListener('submit', (event) => {
     if (location) {
         messageOne.textContent = 'loading...'
         messageTwo.textContent = ''
-        const url = 'http://localhost:3000/weather?address=' + location
+        const url = '/weather?address=' + location
         fetch(url)
         .then((response) => {
             response.json().then((data) => {
